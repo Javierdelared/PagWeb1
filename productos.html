@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Tuberías Manolo</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" >
+		$(document).ready(function(){
+			$("#mascota").click(function(){
+				for(var i=0; i < 10; i++){
+					$(this).animate({"left": "-=150px","top": "+=50px"}, 400).animate({"left": "+=150px","top": "+=50px"}, 400);
+				}
+				for(var i=0; i < 10; i++){
+					$(this).animate({"left": "-=150px","top": "-=50px"}, 400).animate({"left": "+=150px","top": "-=50px"}, 400);
+				}
+			});
+		});
+		</script>
+		<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+	</head>
+	<body>
+		<img id="mascota" src="imagenes/mascota.png" alt="mascota corporativa" />
+		<header>
+			<div id="cabezera" >
+				<div id="inicio" >
+					<a href="paginaprincipal.html" ><img src="imagenes/logo.jpg" alt="logotipo empresa X" /></a>
+				</div>
+				<div id="titulo" >
+					<a href="paginaprincipal.html" ><h1>Tuberías Manolo</h1></a>
+				</div>
+			</div>
+			<div id="menus" >
+				<nav class="menu-secundario" >
+					<ul>
+						<li>
+							<a href="contacto.html" >Contacto</a>
+						</li> 
+						<li>
+							<a href="noticias.html" >Noticias</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="menu-principal" >
+					<ul>
+						<li id="quien" >
+							<a href="quien.html" >Quienes somos</a>
+							<ul class="desplegable" >
+								<li>
+									<a href="quien.html#inicios" >Inicios</a>
+								</li>
+								<li>
+									<a href="quien.html#profesionales" >Profesionales</a>
+								</li>
+								<li>
+									<a href="quien.html#proyectos" >Proyectos</a>
+								</li>
+							</ul>		
+						</li>
+						<li>
+							<a href="presencia.html" >Presencia</a>
+							<ul class="desplegable" >
+								<li>
+									<a href="presencia.html#posglob" >Posicionamiento global</a>
+								</li>
+								<li>
+									<a href="presencia.html#sedes" >Sedes</a>
+								</li>
+								<li>
+									<a href="presencia.html#comollegar" >Cómo llegar</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="productos.html" >Productos</a>
+							<ul class="desplegable" >
+								<li>
+									<a href="productos.html#productos" >Productos</a>
+								</li>
+								<li>
+									<a href="productos.html#calidad" >Garantias de calidad</a>
+								</li>
+								<li>
+									<a href="productos.html#proveedores" >Proveedores</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="grid1">
+							<h2>Productos</h2>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div id="productos" class="row">
+					<div class="col-sm-12">
+						<div class="grid1">
+							<h3>Gran variedad</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="grid1">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin imperdiet justo, sed volutpat ligula cursus et. Pellentesque pretium dictum libero, id eleifend nunc sagittis quis. Nam ornare arcu ligula, vitae sagittis ante sagittis sed. Suspendisse efficitur tempus risus at rhoncus. Nulla mollis leo id eleifend suscipit. Mauris consequat pulvinar metus vel bibendum. Donec et eros ac diam rutrum rhoncus. Donec rutrum enim pulvinar, rutrum quam eget, aliquam odio. Duis mauris arcu, mattis in risus at, aliquam convallis lorem.</p>
+						</div>
+					</div>
+					<div class="col-sm-5">
+						<div class="grid1 alt1">
+							<img src="imagenes/tuberias.jpeg" alt="varias tuberías de cobre" />
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="grid1">
+							<p>Duis vitae augue in felis efficitur vehicula. Vivamus venenatis blandit iaculis. Nullam condimentum lorem quis erat posuere, sed fermentum ligula accumsan. Nullam hendrerit scelerisque arcu et convallis. Quisque consectetur magna vitae convallis sodales. Nullam dolor ipsum, aliquam ac porttitor consequat, blandit sed leo. Etiam imperdiet venenatis lectus id aliquet. Aenean ultricies velit vitae leo mattis dignissim. Ut eros erat, convallis et ex quis, posuere lacinia ex. Suspendisse at elit imperdiet, condimentum est at, lacinia arcu. Nullam eu mauris magna. Aenean blandit, mauris pharetra vehicula aliquam, metus mi venenatis justo, ut suscipit magna eros sit amet leo. Nulla vehicula augue at arcu porttitor, quis pharetra mi pretium.</p>
+						</div>
+					</div>
+				</div>
+				<div id="calidad" class="row">
+					<div class="col-sm-12">
+						<div class="grid1">
+							<h3>Garantías de calidad</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="grid1">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin imperdiet justo, sed volutpat ligula cursus et. Pellentesque pretium dictum libero, id eleifend nunc sagittis quis. Nam ornare arcu ligula, vitae sagittis ante sagittis sed. Suspendisse efficitur tempus risus at rhoncus. Nulla mollis leo id eleifend suscipit. Mauris consequat pulvinar metus vel bibendum. Donec et eros ac diam rutrum rhoncus. Donec rutrum enim pulvinar, rutrum quam eget, aliquam odio. Duis mauris arcu, mattis in risus at, aliquam convallis lorem.</p>
+							<p>Duis vitae augue in felis efficitur vehicula. Vivamus venenatis blandit iaculis. Nullam condimentum lorem quis erat posuere, sed fermentum ligula accumsan. Nullam hendrerit scelerisque arcu et convallis. Quisque consectetur magna vitae convallis sodales. Nullam dolor ipsum, aliquam ac porttitor consequat, blandit sed leo. Etiam imperdiet venenatis lectus id aliquet. Aenean ultricies velit vitae leo mattis dignissim. Ut eros erat, convallis et ex quis, posuere lacinia ex. Suspendisse at elit imperdiet, condimentum est at, lacinia arcu. Nullam eu mauris magna. Aenean blandit, mauris pharetra vehicula aliquam, metus mi venenatis justo, ut suscipit magna eros sit amet leo. Nulla vehicula augue at arcu porttitor, quis pharetra mi pretium.</p>
+						</div>
+					</div>
+				</div>
+				<div id="proveedores" class="row">
+					<div class="col-sm-12">
+						<div class="grid1">
+							<h3>Proveedores</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="grid1">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin imperdiet justo, sed volutpat ligula cursus et. Pellentesque pretium dictum libero, id eleifend nunc sagittis quis. Nam ornare arcu ligula, vitae sagittis ante sagittis sed. Suspendisse efficitur tempus risus at rhoncus. Nulla mollis leo id eleifend suscipit. Mauris consequat pulvinar metus vel bibendum. Donec et eros ac diam rutrum rhoncus. Donec rutrum enim pulvinar, rutrum quam eget, aliquam odio. Duis mauris arcu, mattis in risus at, aliquam convallis lorem.</p>
+							<p>Duis vitae augue in felis efficitur vehicula. Vivamus venenatis blandit iaculis. Nullam condimentum lorem quis erat posuere, sed fermentum ligula accumsan. Nullam hendrerit scelerisque arcu et convallis. Quisque consectetur magna vitae convallis sodales. Nullam dolor ipsum, aliquam ac porttitor consequat, blandit sed leo. Etiam imperdiet venenatis lectus id aliquet. Aenean ultricies velit vitae leo mattis dignissim. Ut eros erat, convallis et ex quis, posuere lacinia ex. Suspendisse at elit imperdiet, condimentum est at, lacinia arcu. Nullam eu mauris magna. Aenean blandit, mauris pharetra vehicula aliquam, metus mi venenatis justo, ut suscipit magna eros sit amet leo. Nulla vehicula augue at arcu porttitor, quis pharetra mi pretium.</p>
+						</div>
+					</div>
+				</div>
+				<a href="#inicio" ><div class="row">
+					<div class="col-sm-12">
+						<div class="grid1 alt2">
+							<p>Volver arriba  <span class="glyphicon glyphicon-chevron-up"></span></p>
+						</div>
+					</div>
+				</div></a>
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="grid1 alt3">
+							<div class="redsoc">
+								<p><a href="https://www.twitter.com" ><img src="imagenes/twitterlogo.png" alt="logo twitter" /></a></p>
+							</div>
+							<div class="redsoc">
+								<p><a href="https://www.facebook.com" ><img src="imagenes/facebooklogo.png" alt="logo facebook" /></a></p>
+							</div>
+							<div class="redsoc">
+								<p><a href="https://www.linkedin.com" ><img src="imagenes/linkedinlogo.png" alt="logo linkedin" /></a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-9">
+						<div class="grid1 alt3">
+							<p class="enlaces">
+								<a href="paginaprincipal.html#inicio">Home</a>
+								·
+								<a href="#">About</a>
+								·
+								<a href="#">Faq</a>
+								·
+								<a href="contacto.html#inicio">Contacto</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Tuberías Manolo</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" >
+		$(document).ready(function(){
+			$("#mascota").click(function(){
+				for(var i=0; i < 10; i++){
+					$(this).animate({"left": "-=150px","top": "+=50px"}, 400).animate({"left": "+=150px","top": "+=50px"}, 400);
+				}
+				for(var i=0; i < 10; i++){
+					$(this).animate({"left": "-=150px","top": "-=50px"}, 400).animate({"left": "+=150px","top": "-=50px"}, 400);
+				}
+			});
+		});
+		</script>
+		<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+	</head>
+	<body>
+		<img id="mascota" src="imagenes/mascota.png" alt="mascota corporativa" />
+		<header>
+			<div id="cabezera" >
+				<div id="inicio" >
+					<a href="paginaprincipal.html" ><img src="imagenes/logo.jpg" alt="logotipo tuberías Manolo" /></a>
+				</div>
+				<div id="titulo" >
+					<a href="paginaprincipal.html" ><h1>Tuberías Manolo</h1></a>
+				</div>
+			</div>
+			<div id="menus" >
+				<nav class="menu-secundario" >
+					<ul>
+						<li>
+							<a href="contacto.html" >Contacto</a>
+						</li> 
+						<li>
+							<a href="noticias.html" >Noticias</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="menu-principal" >
+					<ul>
+						<li id="quien" >
+							<a href="quien.html" >Quienes somos</a>
+							<ul class="desplegable" >
+								<li>
+									<a href="quien.html#inicios" >Inicios</a>
+								</li>
+								<li>
+									<a href="quien.html#profesionales" >Profesionales</a>
+								</li>
+								<li>
+									<a href="quien.html#proyectos" >Proyectos</a>
+								</li>
+							</ul>		
+						</li>
+						<li>
+							<a href="presencia.html" >Presencia</a>
+							<ul class="desplegable" >
+								<li>
+									<a href="presencia.html#posglob" >Posicionamiento global</a>
+								</li>
+								<li>
+									<a href="presencia.html#sedes" >Sedes</a>
+								</li>
+								<li>
+									<a href="presencia.html#comollegar" >Cómo llegar</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="productos.html" >Productos</a>
+							<ul class="desplegable" >
+								<li>
+									<a href="productos.html#productos" >Productos</a>
+								</li>
+								<li>
+									<a href="productos.html#calidad" >Garantias de calidad</a>
+								</li>
+								<li>
+									<a href="productos.html#proveedores" >Proveedores</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div id="cabezera" >
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="grid1 alt1">
+						<form name="miFormulario" action="http://www.inertinc.com/cursos/cursoweb2015/evaluf3/" method="post" >
+							<div>
+								<h2>Contacto</h2>
+							</div>
+							<div>
+								<label for="nombre">Nombre*: </label>
+								<input type="text" name="nombre" id="nombre" autofocus required />
+							</div>
+							<div>
+								<label for="emailusuario">E-mail*: </label>
+								<input type="email" name="emailusuario" id="emailusuario" required />
+							</div>
+							<div>
+								<label for="direccion">Dirección: </label>
+								<input type="text" name="direccion" id="direccion" />
+							</div>
+							<div>
+								<label for="provincia">Provincia: </label>
+								<select name="provincia" id="provincia">
+									<option value="--">--</option>
+									<option value="Murcia">Murcia</option>
+									<option value="Alicante">Alicante</option>
+									<option value="Almería">Almería</option>
+								</select>
+							</div>
+							<div>
+								<label for="telefono">Teléfono: </label>
+								<input type="tel" name="telefono" id="telefono" maxlength="9" minlength="9" autocomplete="off" />
+							</div>
+							<div>
+								<label for="paginaweb">Página web: </label>
+								<input type="text" name="paginaweb" id="paginaweb" />
+							</div>
+							<div>
+								<label for="comentario">Comentario*: </label>
+								<textarea name="comentario" id="comentario" placeholder="Escriba aquí su comentario" required cols="25" rows="3" ></textarea>
+							</div>
+							<div>
+								<input type="hidden" name="emailalumno" value="javi.red@hotmail.es">
+								<input type="hidden" name="plantillacorreo" value="<p>Se ha recibido un nuevo formulario de contacto del usuario %nombre% con un comentario acerca de la web.</p><p>El comentario es el siguiente:</p><p>%comentario%</p><p>Datos adicionales del usuario:<br/>Dirección: %direccion%, %provincia%<br/>Teléfono: %telefono%<br/>Página web: <a href='%paginaweb%'>%paginaweb%</a></p>" />
+								<input type="hidden" name="clavesecreta" value="3a881f46d2">
+							</div>
+							<div id="envio">
+								*Campos obligatorios <br/>
+								<button type="submit">Enviar</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="grid1">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit, diam a tempus sollicitudin, mauris orci sollicitudin mi, sit amet cursus ligula magna vitae ante. Donec at risus urna. Sed rhoncus arcu sit amet massa pharetra venenatis. Curabitur vel nibh sapien. Morbi cursus non libero sit amet congue. Suspendisse nec felis et dui tincidunt pretium. Suspendisse sit amet mattis dui, a fermentum mauris. Aenean urna massa, accumsan ut bibendum nec, aliquam quis ante. Morbi rhoncus ornare neque sed molestie. Morbi feugiat neque ipsum, quis faucibus massa vulputate eu. Suspendisse tempus porttitor finibus. Duis ullamcorper tempor nibh vitae fermentum. Nunc at massa non augue consectetur imperdiet. Sed et neque laoreet, pulvinar augue quis, sagittis erat.</p>
+					</div>
+				</div>
+			</div>
+			<a href="#inicio" ><div class="row">
+				<div class="col-sm-12">
+					<div class="grid1 alt2">
+						<p>Volver arriba  <span class="glyphicon glyphicon-chevron-up"></span></p>
+					</div>
+				</div>
+			</div></a>
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="grid1 alt3">
+						<div class="redsoc">
+							<p><a href="https://www.twitter.com" ><img src="imagenes/twitterlogo.png" alt="logo twitter" /></a></p>
+						</div>
+						<div class="redsoc">
+							<p><a href="https://www.facebook.com" ><img src="imagenes/facebooklogo.png" alt="logo facebook" /></a></p>
+						</div>
+						<div class="redsoc">
+							<p><a href="https://www.linkedin.com" ><img src="imagenes/linkedinlogo.png" alt="logo linkedin" /></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-9">
+					<div class="grid1 alt3">
+						<p class="enlaces">
+							<a href="paginaprincipal.html#inicio">Home</a>
+							·
+							<a href="#">About</a>
+							·
+							<a href="#">Faq</a>
+							·
+							<a href="contacto.html#inicio">Contacto</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
